@@ -235,11 +235,17 @@ body::after {
 }
 
 .sse-protein-label {
-  margin-top: 30px;
+  margin-top: 34px;
   margin-bottom: 14px;
-  font-size: 1.14rem;
-  color: #985e00;
-  font-weight: 600;
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: var(--sse-accent);
+  background: linear-gradient(90deg, #fffde6 40%, #ffb70311 100%);
+  border-left: 7px solid var(--sse-primary);
+  border-radius: 0 5px 5px 0;
+  padding: 0.15em 0.8em 0.15em 0.65em;
+  letter-spacing: 0.01em;
+  box-shadow: 0 0.5px 8px #ffe88a33;
 }
 
 .sse-recipe-subtitle {
