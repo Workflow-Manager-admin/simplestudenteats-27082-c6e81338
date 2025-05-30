@@ -1,10 +1,11 @@
 :root {
-  /* Color theme for SimpleStudentEats */
+  /* Theme colors for SimpleStudentEats */
   --sse-primary: #f6d21e;
-  --sse-secondary: #f9f9f9;
+  --sse-secondary: #f9f9f9; /* now obsolete for background */
   --sse-accent: #ffb703;
 
-  --sse-bg: var(--sse-secondary);
+  /* Instead of a flat color, use transparent for app background */
+  --sse-bg: transparent;
   --sse-text: #1a1a1a;
   --sse-border: #ebebeb;
 
@@ -16,62 +17,76 @@
   --sse-max-width: 960px;
 }
 
-/* COOKING BACKGROUND LAYER */
+/* ====== VISIBLE, PROMINENT COOKING BACKGROUND ====== */
 
-/* Add a blurred, subtle cooking background image sitewide */
 body, .sse-app {
   margin: 0;
-  background: var(--sse-bg);
+  background: transparent !important; /* Remove white/secondary fallback */
   color: var(--sse-text);
   font-family: var(--sse-base-font);
   font-size: 16px;
-  /* Add a relative stacking context so ::before can be positioned */
   position: relative;
   min-height: 100vh;
   z-index: 0;
-  /* The image is applied via ::before for full-page coverage */
+  overflow-x: hidden;
 }
 
-.sse-app::before {
-  /* Background: ROIYALTY FREE COOKING IMAGE, subtle, fixed for parallax effect */
+/* Main, highly visible cooking background image for the site */
+body::before {
   content: "";
-  pointer-events: none;
   position: fixed;
-  z-index: -1;
-  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -2;
+  inset: 0;
   width: 100vw;
   height: 100vh;
-  /* Use a bright, soft cooking/food flat lay background from Unsplash (open license) */
-  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.14;                /* Extra-low opacity for text contrast */
-  filter: blur(2.5px) grayscale(0.08) brightness(1.10);
-  mix-blend-mode: lighten;      /* Blend softly for light theme */
-  transition: opacity 0.4s;
+  background: 
+    /* Vivid, recognizable cooking/food background, Unsplash open-license */
+    url("https://images.unsplash.com/photo-1516685018646-5499d0a7fd51?auto=format&fit=crop&w=1500&q=80") center center/cover no-repeat;
+  opacity: 0.52; /* Prominent and visible, not subtle */
+  filter: grayscale(0.02) brightness(0.97) saturate(1.15) blur(0.5px);
+  background-blend-mode: multiply;
+  transition: opacity 0.3s;
+  pointer-events: none;
 }
 
-/* If user prefers reduced transparency or high contrast, remove background image for accessibility */
+/* Extra layer for better content readability: semi-transparent overlay */
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  /* use a dark translucent overlay to increase content legibility */
+  background: rgba(255,255,240, 0.66);
+  pointer-events: none;
+  /* Do not use pure white for blend; off-white reduces harshness */
+}
+
+/* Remove background image for accessibility/high contrast preferences */
 @media (prefers-color-scheme: dark) {
-  .sse-app::before {
+  body::before, body::after {
     display: none;
   }
 }
 @media (prefers-contrast: more) {
-  .sse-app::before {
+  body::before, body::after {
     display: none;
   }
 }
 
-/* Global/app base */
+/* App layout: stack on top of overlays */
 .sse-app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background: transparent !important;
+  z-index: 1;
+  position: relative;
 }
 
+/* Sticky navbar (OPAQUE for legibility) */
 .sse-navbar {
   background: var(--sse-primary);
   padding: 0;
