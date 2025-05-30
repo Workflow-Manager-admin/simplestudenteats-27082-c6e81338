@@ -16,15 +16,55 @@
   --sse-max-width: 960px;
 }
 
-/* Global/app base */
+/* COOKING BACKGROUND LAYER */
+
+/* Add a blurred, subtle cooking background image sitewide */
 body, .sse-app {
   margin: 0;
   background: var(--sse-bg);
   color: var(--sse-text);
   font-family: var(--sse-base-font);
   font-size: 16px;
+  /* Add a relative stacking context so ::before can be positioned */
+  position: relative;
+  min-height: 100vh;
+  z-index: 0;
+  /* The image is applied via ::before for full-page coverage */
 }
 
+.sse-app::before {
+  /* Background: ROIYALTY FREE COOKING IMAGE, subtle, fixed for parallax effect */
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  z-index: -1;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  /* Use a bright, soft cooking/food flat lay background from Unsplash (open license) */
+  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.14;                /* Extra-low opacity for text contrast */
+  filter: blur(2.5px) grayscale(0.08) brightness(1.10);
+  mix-blend-mode: lighten;      /* Blend softly for light theme */
+  transition: opacity 0.4s;
+}
+
+/* If user prefers reduced transparency or high contrast, remove background image for accessibility */
+@media (prefers-color-scheme: dark) {
+  .sse-app::before {
+    display: none;
+  }
+}
+@media (prefers-contrast: more) {
+  .sse-app::before {
+    display: none;
+  }
+}
+
+/* Global/app base */
 .sse-app {
   min-height: 100vh;
   display: flex;
@@ -112,6 +152,8 @@ body, .sse-app {
   padding-top: 32px;
   padding-bottom: 32px;
   flex: 1 1 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .sse-section-title {
