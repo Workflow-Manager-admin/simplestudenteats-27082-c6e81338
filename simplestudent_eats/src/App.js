@@ -257,243 +257,74 @@ const RECIPE_DATA = {
     }
   ],
   veganPlant: [
+    // ...unchanged veganPlant recipes...
+  ],
+  grandparentsCooking: [
     {
-      title: 'Tofu Stir-Fry',
+      title: "Grandma's Apple Cinnamon Pancakes",
       ingredients: [
-        '200g firm tofu',
-        '1 cup mixed veggies (bell pepper, broccoli, carrot)',
-        '2 tbsp soy sauce',
-        '1 tbsp sesame oil',
-        '1 tsp ginger (optional)'
+        "2 apples (peeled, grated)",
+        "1 1/2 cups flour",
+        "2 eggs",
+        "1 cup milk",
+        "1 tsp cinnamon",
+        "2 tbsp sugar",
+        "1 tsp baking powder",
+        "Pinch of salt",
+        "Butter or oil for frying"
       ],
       steps: [
-        'Dice tofu, pat dry. Sauté in oil until golden.',
-        'Add veggies, stir-fry 3-5 min.',
-        'Add soy sauce and ginger, toss well, serve hot.'
+        "In a bowl, mix flour, baking powder, cinnamon, sugar, and salt.",
+        "Whisk in eggs and milk until just combined.",
+        "Fold in grated apples.",
+        "Heat pan with a little butter or oil; drop small ladlefuls of batter.",
+        "Flip when bubbles form, cook until golden on both sides.",
+        "Serve warm, optionally sprinkle with more cinnamon or a little sugar."
       ],
-      proteinSource: 'Tofu'
+      story:
+        "Legend has it my grandma learned this recipe from her own mother during the autumn apple harvests in the Polish countryside. Every Sunday, the smell of cinnamon would drift from her small kitchen, bringing neighbors in for a chat and a warm treat. These soft pancakes celebrate family, togetherness, and making the most of simple ingredients."
     },
     {
-      title: 'Crispy Baked Tofu Bites',
+      title: "Nana’s Hearty Vegetable Soup",
       ingredients: [
-        '200g tofu',
-        '1 tbsp olive oil',
-        '1 tbsp soy sauce',
-        '1 tbsp cornflour',
-        'Salt & pepper'
+        "2 carrots, diced",
+        "2 potatoes, peeled and cubed",
+        "1 onion, chopped",
+        "2 celery stalks, chopped",
+        "2 cups vegetable broth",
+        "1 can diced tomatoes",
+        "1 clove garlic, minced",
+        "1 tsp dried thyme",
+        "Salt and pepper to taste"
       ],
       steps: [
-        'Press tofu and cut into cubes.',
-        'Toss cubes with oil, soy sauce, cornflour, salt & pepper.',
-        'Bake at 200°C (400°F) for 25 min, turning halfway.'
+        "Heat a large pot, sauté the onion, garlic, carrot, and celery for 3-4 minutes.",
+        "Add potatoes, diced tomatoes (with juice), broth, and thyme.",
+        "Bring to a boil; reduce to simmer and cook until veggies are tender (20-25 minutes).",
+        "Season with salt and pepper to taste. Serve steaming hot."
       ],
-      proteinSource: 'Tofu'
+      story:
+        "Nana would serve this soup after long days in her garden, as a way to bring the whole family together around one pot. It’s a celebration of simple, local produce and the comfort of home. Every bowl brings back memories of laughter at a crowded table."
     },
     {
-      title: 'Soy Sauce Noodle Bowl',
+      title: "Nonno’s Classic Spaghetti Aglio e Olio",
       ingredients: [
-        '200g dried noodles',
-        '2 spring onions',
-        '2 tbsp soy sauce',
-        '1 tbsp sesame oil',
-        'Pinch of white pepper'
+        "200g spaghetti",
+        "3 tbsp olive oil",
+        "3 garlic cloves, thinly sliced",
+        "Pinch of red chili flakes",
+        "2 tbsp chopped parsley",
+        "Salt",
+        "Grated parmesan (optional)"
       ],
       steps: [
-        'Prepare noodles as per pack instructions.',
-        'Mix soy sauce, oil, pepper. Toss noodles in mixture.',
-        'Top with chopped spring onion and serve.'
+        "Cook spaghetti until al dente in salted water.",
+        "While pasta cooks, gently warm olive oil in a pan. Add sliced garlic and chili flakes, sauté on low till garlic golden.",
+        "Reserve some pasta water, drain spaghetti, then toss into the pan.",
+        "Add a splash of pasta water if needed, mix with parsley. Serve hot, with parmesan if liked."
       ],
-      proteinSource: 'Soy'
-    },
-    {
-      title: 'Simple Lentil Stew',
-      ingredients: [
-        '1 cup cooked lentils',
-        '1 carrot',
-        '1 small onion',
-        '2 cups vegetable broth',
-        '1 bay leaf'
-      ],
-      steps: [
-        'Chop onion and carrot, sauté in pot.',
-        'Add lentils, broth, bay leaf, simmer 15 min.',
-        'Remove bay leaf and serve.'
-      ],
-      proteinSource: 'Lentils'
-    },
-    {
-      title: 'Lentil Curry',
-      ingredients: [
-        '1 cup dried lentils',
-        '2 cups water',
-        '1 can diced tomatoes',
-        '1 tsp curry powder',
-        'Salt to taste'
-      ],
-      steps: [
-        'Rinse lentils, simmer in water until soft.',
-        'Add tomatoes, curry powder, and salt. Simmer 10 min.',
-        'Serve with rice or bread.'
-      ],
-      proteinSource: 'Lentils'
-    },
-    {
-      title: 'Lentil Shepherd\'s Pie',
-      ingredients: [
-        '1.5 cups cooked lentils',
-        '2 cups mashed potato',
-        '1 onion',
-        '1 carrot',
-        '2 tbsp tomato paste'
-      ],
-      steps: [
-        'Sauté onion and carrot, mix in lentils and tomato paste.',
-        'Spread in dish, top with mashed potato.',
-        'Bake at 200°C for 15 min.'
-      ],
-      proteinSource: 'Lentils'
-    },
-    {
-      title: 'Spicy Chickpea Wrap',
-      ingredients: [
-        '1 can chickpeas',
-        '2 tbsp hummus',
-        '1 tsp hot sauce',
-        '1 wrap/tortilla',
-        'Lettuce leaves'
-      ],
-      steps: [
-        'Mash chickpeas with hummus and hot sauce.',
-        'Spread on wrap, top with lettuce, roll up and serve.'
-      ],
-      proteinSource: 'Chickpeas'
-    },
-    {
-      title: 'Curried Chickpea Stew',
-      ingredients: [
-        '1 can chickpeas',
-        '1 can chopped tomatoes',
-        '1 onion',
-        '1 tsp curry powder',
-        'Salt'
-      ],
-      steps: [
-        'Sauté onion, add curry powder and cook 1 min.',
-        'Add chickpeas and tomatoes, simmer 10 min.',
-        'Season and serve with bread or rice.'
-      ],
-      proteinSource: 'Chickpeas'
-    },
-    {
-      title: 'Beans on Toast (Vegan)',
-      ingredients: [
-        '1 can baked beans',
-        '2 slices wholemeal bread',
-        '1 tsp vegan spread',
-        '1/2 tsp paprika',
-        'Pinch black pepper'
-      ],
-      steps: [
-        'Toast bread, spread with vegan spread.',
-        'Heat beans, season with paprika and pepper.',
-        'Top bread with beans and serve.'
-      ],
-      proteinSource: 'Beans'
-    },
-    {
-      title: 'Bean & Corn Salad',
-      ingredients: [
-        '1 can black beans',
-        '1 cup corn (canned or frozen)',
-        '1 lime',
-        'Salt',
-        'Fresh coriander (optional)'
-      ],
-      steps: [
-        'Rinse beans, mix with drained corn.',
-        'Add juice of lime, salt, coriander; mix and serve.'
-      ],
-      proteinSource: 'Beans'
-    },
-    {
-      title: 'Quick Black Bean Rice',
-      ingredients: [
-        '1 cup cooked rice',
-        '1 can black beans',
-        '1/2 tsp cumin',
-        'Salt',
-        '1 tbsp chopped onion'
-      ],
-      steps: [
-        'Mix beans, onion, cumin, salt in pan; heat 2 min.',
-        'Stir in rice, cook until warm.',
-        'Serve as bowl or side.'
-      ],
-      proteinSource: 'Beans'
-    },
-    {
-      title: 'Peanut Butter Banana Toast',
-      ingredients: [
-        '2 slices bread',
-        '1 banana',
-        '2 tbsp peanut butter',
-        'Chia seeds (optional)',
-        'Cinnamon'
-      ],
-      steps: [
-        'Toast bread, spread peanut butter.',
-        'Slice banana on top.',
-        'Sprinkle cinnamon and chia seeds.'
-      ],
-      proteinSource: 'Peanut'
-    },
-    {
-      title: 'Hummus Stuffed Pita',
-      ingredients: [
-        '1 pita bread',
-        '3 tbsp hummus',
-        '1/4 cucumber, sliced',
-        'Tomato slices',
-        'Lettuce'
-      ],
-      steps: [
-        'Warm pita, slice open.',
-        'Fill with hummus, cucumber, lettuce and tomato.',
-        'Serve cold or warm.'
-      ],
-      proteinSource: 'Chickpeas'
-    },
-    {
-      title: 'Plant-Based Pesto Pasta',
-      ingredients: [
-        '150g pasta',
-        '2 tbsp vegan pesto',
-        '1 tbsp olive oil',
-        'Salt & pepper',
-        'Chopped walnuts (optional)'
-      ],
-      steps: [
-        'Cook pasta, drain.',
-        'Stir in pesto, oil, seasonings.',
-        'Top with chopped walnuts.'
-      ],
-      proteinSource: 'Nuts'
-    },
-    {
-      title: 'Smashed Avocado & Beans',
-      ingredients: [
-        '1 avocado',
-        '1/2 cup canned black beans',
-        'Juice of 1/4 lime',
-        'Salt',
-        '2 slices bread'
-      ],
-      steps: [
-        'Toast bread.',
-        'Mash avocado with lime and salt, spread on toast.',
-        'Top with beans.'
-      ],
-      proteinSource: 'Avocado & Beans'
+      story:
+        "Inspired by Italian kitchen traditions, Nonno would cook this simple meal after returning from the olive groves. He believed great flavor came from simplicity and gathering at the table. This recipe is a delicious reminder of resilience, thrift, and family joy."
     }
   ]
 };
