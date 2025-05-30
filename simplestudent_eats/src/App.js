@@ -384,34 +384,12 @@ function App() {
           {selectedSection === 'veganPlant' &&
             <p>Explore plant-based recipes, organized by their main protein (lentils, tofu, seitan, and more).</p>
           }
+          {selectedSection === 'grandparentsCooking' &&
+            <p>Traditional, family-friendly recipes from our grandparents—with stories, nostalgia, and cultural history in every dish.</p>
+          }
         </div>
         <section aria-label="Recipe List">
-          {selectedSection !== 'veganPlant' && (
-            <ul className="sse-recipe-list">
-              {RECIPE_DATA[selectedSection].map((recipe, i) => (
-                <li className="sse-recipe-card" key={recipe.title}>
-                  <h2 className="sse-recipe-title">{recipe.title}</h2>
-                  <div className="sse-recipe-section">
-                    <h3 className="sse-recipe-subtitle">Ingredients</h3>
-                    <ul className="sse-ingredient-list">
-                      {recipe.ingredients.map((item, j) => (
-                        <li key={j}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="sse-recipe-section">
-                    <h3 className="sse-recipe-subtitle">Steps</h3>
-                    <ol className="sse-steps-list">
-                      {recipe.steps.map((step, k) => (
-                        <li key={k}>{step}</li>
-                      ))}
-                    </ol>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          )}
-          {selectedSection === 'veganPlant' && (
+          {selectedSection === 'veganPlant' ? (
             <div>
               {Object.entries(groupVeganRecipes()).map(([protein, recipes]) => (
                 <div className="sse-vegan-group" key={protein}>
@@ -442,6 +420,57 @@ function App() {
                 </div>
               ))}
             </div>
+          ) : selectedSection === 'grandparentsCooking' ? (
+            <ul className="sse-recipe-list">
+              {RECIPE_DATA.grandparentsCooking.map((recipe, i) => (
+                <li className="sse-recipe-card" key={recipe.title}>
+                  <h2 className="sse-recipe-title">{recipe.title}</h2>
+                  <div className="sse-recipe-section">
+                    <h3 className="sse-recipe-subtitle">Ingredients</h3>
+                    <ul className="sse-ingredient-list">
+                      {recipe.ingredients.map((item, j) => (
+                        <li key={j}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="sse-recipe-section">
+                    <h3 className="sse-recipe-subtitle">Steps</h3>
+                    <ol className="sse-steps-list">
+                      {recipe.steps.map((step, k) => (
+                        <li key={k}>{step}</li>
+                      ))}
+                    </ol>
+                  </div>
+                  <div className="sse-recipe-section" style={{ marginTop: '1em', fontStyle: 'italic', color: '#6c5600' }}>
+                    <div><b>Family Story:</b> {recipe.story}</div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <ul className="sse-recipe-list">
+              {RECIPE_DATA[selectedSection].map((recipe, i) => (
+                <li className="sse-recipe-card" key={recipe.title}>
+                  <h2 className="sse-recipe-title">{recipe.title}</h2>
+                  <div className="sse-recipe-section">
+                    <h3 className="sse-recipe-subtitle">Ingredients</h3>
+                    <ul className="sse-ingredient-list">
+                      {recipe.ingredients.map((item, j) => (
+                        <li key={j}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="sse-recipe-section">
+                    <h3 className="sse-recipe-subtitle">Steps</h3>
+                    <ol className="sse-steps-list">
+                      {recipe.steps.map((step, k) => (
+                        <li key={k}>{step}</li>
+                      ))}
+                    </ol>
+                  </div>
+                </li>
+              ))}
+            </ul>
           )}
         </section>
       </main>
