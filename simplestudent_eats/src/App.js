@@ -727,7 +727,7 @@ function App() {
     <div className="sse-app" style={{ background: 'var(--sse-bg)', color: 'var(--sse-text)' }}>
       <nav className="sse-navbar" role="navigation" aria-label="Main">
         <div className="sse-container sse-navbar-content">
-          <div className="sse-logo" aria-label="SimpleStudentEats">🍲 <span>SimpleStudentEats</span></div>
+          <div className="sse-logo" aria-label="EasyCooking">🍲 <span>EasyCooking</span></div>
           <ul className="sse-nav-list" role="menubar">
             {SECTION_KEYS.map(key => (
               <li 
@@ -755,7 +755,7 @@ function App() {
         <h1 className="sse-section-title">{SECTION_LABELS[selectedSection]}</h1>
         <div className="sse-section-desc">
           {selectedSection === 'studentMeals' &&
-            <p>Budget-friendly, quick, minimal-equipment meals for students. Simple, tasty, and fuss-free.</p>
+            <p>Budget-friendly, quick, minimal-equipment meals for students. Simple, tasty, and fuss-free. Welcome to EasyCooking!</p>
           }
           {selectedSection === 'fiveIngredients' &&
             <p>Just 5 ingredients! These meals are quick, easy, and perfect for busy days or beginner cooks.</p>
@@ -825,7 +825,7 @@ function App() {
       </main>
       <footer className="sse-footer" aria-label="Footer">
         <div className="sse-container">
-          <span>© {new Date().getFullYear()} SimpleStudentEats</span>
+          <span>© {new Date().getFullYear()} EasyCooking</span>
         </div>
       </footer>
     </div>
