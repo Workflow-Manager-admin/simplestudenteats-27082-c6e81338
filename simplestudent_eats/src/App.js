@@ -3,7 +3,7 @@ import './App.css';
 
 // PUBLIC_INTERFACE
 /**
- * Main app container for SimpleStudentEats.
+ * Main app container for EasyCooking.
  * Provides navigation between three sections and lists recipes in text-centric minimalist cards.
  * Uses specified color theme for a clean, accessible, and responsive layout with no images.
  */
