@@ -53,6 +53,51 @@ const RECIPE_DATA = {
         'Add peas and soy sauce, stir well.',
         'Push aside, scramble egg, mix all, serve warm.'
       ]
+    },
+    {
+      title: 'Student Chili Bowl',
+      ingredients: [
+        '1 can kidney beans',
+        '1 can chopped tomatoes',
+        '1 small onion',
+        '1 tsp chili powder',
+        'Salt and pepper'
+      ],
+      steps: [
+        'Chop onion and sauté in pan 2 min.',
+        'Add beans, tomatoes, chili powder.',
+        'Simmer for 8-10 min, season and serve with bread/rice.'
+      ]
+    },
+    {
+      title: 'Egg Fried Toasties',
+      ingredients: [
+        '2 slices bread',
+        '2 eggs',
+        '1 tbsp milk',
+        'Butter or oil',
+        'Pinch of salt'
+      ],
+      steps: [
+        'Whisk eggs, milk, and salt together.',
+        'Heat butter in pan, dip bread into egg mixture.',
+        'Fry bread both sides until golden and egg is set.'
+      ]
+    },
+    {
+      title: 'Quick Veggie Couscous',
+      ingredients: [
+        '1 cup couscous',
+        '1 cup boiling water',
+        '1/2 cup frozen mixed veg',
+        '1 stock cube',
+        'Squeeze of lemon (optional)'
+      ],
+      steps: [
+        'Place couscous, stock cube, and veg in bowl.',
+        'Pour boiling water over, cover for 5 min.',
+        'Fluff with fork, add lemon, and serve.'
+      ]
     }
   ],
   fiveIngredients: [
@@ -85,6 +130,51 @@ const RECIPE_DATA = {
         'Place one tortilla, add cheese and veg.',
         'Top with second tortilla, cook both sides till golden. Slice and serve.'
       ]
+    },
+    {
+      title: 'Avocado Toast',
+      ingredients: [
+        '2 slices bread',
+        '1 ripe avocado',
+        '1/4 lemon',
+        'Salt',
+        'Pepper'
+      ],
+      steps: [
+        'Toast the bread to liking.',
+        'Mash avocado with lemon juice, salt, and pepper.',
+        'Spread over toast and serve.'
+      ]
+    },
+    {
+      title: 'Microwave Scrambled Eggs',
+      ingredients: [
+        '2 eggs',
+        '2 tbsp milk',
+        'Salt',
+        'Pepper',
+        'Butter'
+      ],
+      steps: [
+        'Beat eggs with milk, salt, and pepper in mug.',
+        'Microwave 45 secs, stir, then 30 secs more.',
+        'Add butter and enjoy from mug or plate.'
+      ]
+    },
+    {
+      title: 'One-Pot Sausage Rice',
+      ingredients: [
+        '1 cup rice',
+        '2 sausages',
+        '1 cup frozen peas',
+        '2 cups water',
+        '1 stock cube'
+      ],
+      steps: [
+        'Slice sausages and brown in pot.',
+        'Add rice, water, peas, and stock cube.',
+        'Simmer covered for 15 min until rice is cooked.'
+      ]
     }
   ],
   veganPlant: [
@@ -105,6 +195,22 @@ const RECIPE_DATA = {
       proteinSource: 'Tofu'
     },
     {
+      title: 'Crispy Baked Tofu Bites',
+      ingredients: [
+        '200g tofu',
+        '1 tbsp olive oil',
+        '1 tbsp soy sauce',
+        '1 tbsp cornflour',
+        'Salt & pepper'
+      ],
+      steps: [
+        'Press tofu and cut into cubes.',
+        'Toss cubes with oil, soy sauce, cornflour, salt & pepper.',
+        'Bake at 200°C (400°F) for 25 min, turning halfway.'
+      ],
+      proteinSource: 'Tofu'
+    },
+    {
       title: 'Lentil Curry',
       ingredients: [
         '1 cup dried lentils',
@@ -119,6 +225,52 @@ const RECIPE_DATA = {
         'Serve with rice or bread.'
       ],
       proteinSource: 'Lentils'
+    },
+    {
+      title: 'Simple Lentil Stew',
+      ingredients: [
+        '1 cup cooked lentils',
+        '1 carrot',
+        '1 small onion',
+        '2 cups vegetable broth',
+        '1 bay leaf'
+      ],
+      steps: [
+        'Chop onion and carrot, sauté in pot.',
+        'Add lentils, broth, bay leaf, simmer 15 min.',
+        'Remove bay leaf and serve.'
+      ],
+      proteinSource: 'Lentils'
+    },
+    {
+      title: 'Spicy Chickpea Wrap',
+      ingredients: [
+        '1 can chickpeas',
+        '2 tbsp hummus',
+        '1 tsp hot sauce',
+        '1 wrap/tortilla',
+        'Lettuce leaves'
+      ],
+      steps: [
+        'Mash chickpeas with hummus and hot sauce.',
+        'Spread on wrap, top with lettuce, roll up and serve.'
+      ],
+      proteinSource: 'Chickpeas'
+    },
+    {
+      title: 'Bean & Corn Salad',
+      ingredients: [
+        '1 can black beans',
+        '1 cup corn (canned or frozen)',
+        '1 lime',
+        'Salt',
+        'Fresh coriander (optional)'
+      ],
+      steps: [
+        'Rinse beans, mix with drained corn.',
+        'Add juice of lime, salt, coriander; mix and serve.'
+      ],
+      proteinSource: 'Beans'
     }
   ]
 };
