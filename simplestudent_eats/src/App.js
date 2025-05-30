@@ -98,6 +98,156 @@ const RECIPE_DATA = {
         'Pour boiling water over, cover for 5 min.',
         'Fluff with fork, add lemon, and serve.'
       ]
+    },
+    {
+      title: 'Instant Ramen Egg Drop',
+      ingredients: [
+        '1 pack instant ramen',
+        '2 cups water',
+        '1 egg',
+        '2 spring onions',
+        'Soy sauce to taste'
+      ],
+      steps: [
+        'Boil water, add ramen and seasoning.',
+        'When noodles soften, beat egg and swirl into soup.',
+        'Top with chopped spring onion and soy sauce, serve hot.'
+      ]
+    },
+    {
+      title: 'Simple Tuna Mayo Rice',
+      ingredients: [
+        '1 cup cooked rice',
+        '1 can tuna (drained)',
+        '2 tbsp mayonnaise',
+        '1/2 tsp black pepper',
+        'Pinch of salt'
+      ],
+      steps: [
+        'Mix tuna with mayonnaise and pepper.',
+        'Serve atop warm rice. Add salt to taste.',
+        'Optional: Add chopped green onion.'
+      ]
+    },
+    {
+      title: 'Breakfast Burrito',
+      ingredients: [
+        '1 tortilla wrap',
+        '2 eggs',
+        '1/4 cup grated cheese',
+        '2 tbsp salsa',
+        '1 tbsp oil or butter'
+      ],
+      steps: [
+        'Scramble eggs in pan with oil or butter.',
+        'Add cheese, stir gently. Place into tortilla.',
+        'Top with salsa, wrap, cut in half.'
+      ]
+    },
+    {
+      title: 'Lazy Bean Quesadilla',
+      ingredients: [
+        '1 flour tortilla',
+        '1/2 can refried beans',
+        '1/2 cup cheese',
+        'Hot sauce (optional)',
+        'Oil spray'
+      ],
+      steps: [
+        'Spread beans over half tortilla, top with cheese and hot sauce.',
+        'Fold, fry on pan with oil spray each side until golden.',
+        'Cool slightly, slice and serve.'
+      ]
+    },
+    {
+      title: 'Microwave Veggie Omelet',
+      ingredients: [
+        '2 eggs',
+        '1/4 cup mixed chopped veggies',
+        '2 tbsp milk',
+        'Salt & pepper',
+        'Microwave-safe bowl'
+      ],
+      steps: [
+        'Beat eggs, milk, salt, and pepper in bowl.',
+        'Stir in veggies. Microwave 1 min, stir, then 30 sec more.',
+        'Enjoy straight from bowl or on toast.'
+      ]
+    },
+    {
+      title: 'Canned Soup Uplift',
+      ingredients: [
+        '1 can of soup',
+        '1 slice bread (cubed or torn)',
+        '1/2 cup frozen peas or corn',
+        'Salt and pepper',
+        'Chili flakes (optional)'
+      ],
+      steps: [
+        'Pour soup into pot, add bread cubes and frozen veg.',
+        'Heat through until bread softens.',
+        'Season with salt, pepper, and chili if desired.'
+      ]
+    },
+    {
+      title: 'Baked Bean Toast',
+      ingredients: [
+        '1 can baked beans',
+        '2 slices bread',
+        'Butter',
+        'Black pepper',
+        'Paprika (optional)'
+      ],
+      steps: [
+        'Toast the bread and butter it.',
+        'Heat beans, season with pepper or paprika.',
+        'Spoon beans over toast and enjoy.'
+      ]
+    },
+    {
+      title: 'Pita Pizza',
+      ingredients: [
+        '1 pita bread',
+        '3 tbsp tomato sauce',
+        '1/2 cup cheese',
+        'Dried oregano',
+        'Veg toppings (optional)'
+      ],
+      steps: [
+        'Spread sauce on pita, sprinkle cheese, add toppings if desired.',
+        'Sprinkle oregano. Bake or grill till cheese melts.',
+        'Slice and serve.'
+      ]
+    },
+    {
+      title: 'No-Cook Chickpea Salad',
+      ingredients: [
+        '1 can chickpeas',
+        '1/4 onion (chopped)',
+        '1 tbsp olive oil',
+        'Juice of half a lemon',
+        'Salt & pepper'
+      ],
+      steps: [
+        'Rinse chickpeas, mix all ingredients in a bowl.',
+        'Toss until well combined.',
+        'Serve as is or in a wrap.'
+      ]
+    },
+    {
+      title: 'Cheap Tomato Risotto',
+      ingredients: [
+        '3/4 cup rice (short grain best)',
+        '1 can chopped tomatoes',
+        '1 onion',
+        '2 cups water or broth',
+        'Salt & pepper'
+      ],
+      steps: [
+        'Chop onion and sauté in pot.',
+        'Add rice, stir, then add tomatoes and water.',
+        'Cook on low, stirring, until rice is creamy and soft. Season to taste.'
+      ]
     }
   ],
   fiveIngredients: [
@@ -175,6 +325,156 @@ const RECIPE_DATA = {
         'Add rice, water, peas, and stock cube.',
         'Simmer covered for 15 min until rice is cooked.'
       ]
+    },
+    {
+      title: 'Tortilla Chips & Salsa',
+      ingredients: [
+        'Tortilla chips',
+        '1 small jar salsa',
+        '1/2 avocado (optional)',
+        'Lime wedge',
+        'Pinch of chili flakes'
+      ],
+      steps: [
+        'Arrange chips on plate.',
+        'Top with spoonfuls of salsa and avocado if using.',
+        'Squeeze lime and sprinkle chili, serve immediately.'
+      ]
+    },
+    {
+      title: 'Pasta Aglio e Olio',
+      ingredients: [
+        '200g spaghetti',
+        '3 cloves garlic',
+        '2 tbsp olive oil',
+        'Chili flakes',
+        'Salt'
+      ],
+      steps: [
+        'Cook pasta. Reserve 1/4 cup pasta water.',
+        'Fry sliced garlic in oil, add chili flakes.',
+        'Add drained pasta and water, toss, season to taste.'
+      ]
+    },
+    {
+      title: 'Egg & Cheese Sandwich',
+      ingredients: [
+        '2 slices bread',
+        '1 egg',
+        '1 slice cheese',
+        '1 tbsp butter',
+        'Salt & pepper'
+      ],
+      steps: [
+        'Heat pan, melt butter.',
+        'Fry egg, add cheese on top to melt slightly.',
+        'Sandwich between toasted bread, season to taste.'
+      ]
+    },
+    {
+      title: 'Tomato & Mozzarella Salad',
+      ingredients: [
+        '1 large tomato',
+        '1 ball mozzarella',
+        'Basil leaves or dried basil',
+        'Olive oil',
+        'Salt'
+      ],
+      steps: [
+        'Slice tomato and mozzarella.',
+        'Arrange with basil, drizzle olive oil.',
+        'Sprinkle with salt and serve.'
+      ]
+    },
+    {
+      title: 'Simple Banana Pancakes',
+      ingredients: [
+        '1 banana',
+        '2 eggs',
+        'Pinch of cinnamon',
+        'Butter or oil for cooking',
+        'Syrup (optional)'
+      ],
+      steps: [
+        'Mash banana, whisk with eggs and cinnamon.',
+        'Pour spoonfuls onto hot pan in oil/butter.',
+        'Cook both sides, serve with syrup if liked.'
+      ]
+    },
+    {
+      title: 'Microwaved Jacket Potato',
+      ingredients: [
+        '1 medium potato',
+        'Salt',
+        'Pepper',
+        'Butter',
+        'Grated cheese'
+      ],
+      steps: [
+        'Prick potato, microwave 5-7 min until soft.',
+        'Cut open, add butter and cheese.',
+        'Season well, eat hot.'
+      ]
+    },
+    {
+      title: 'Easy Pesto Pasta',
+      ingredients: [
+        '200g pasta',
+        '2 tbsp pesto',
+        'Salt',
+        'Pepper',
+        'Grated cheese'
+      ],
+      steps: [
+        'Cook pasta, drain.',
+        'Stir through pesto.',
+        'Season and serve topped with cheese.'
+      ]
+    },
+    {
+      title: 'Ham & Cheese Roll-Ups',
+      ingredients: [
+        '2 tortilla wraps',
+        '2 slices ham',
+        '2 slices cheese',
+        'Mustard',
+        'Lettuce (optional)'
+      ],
+      steps: [
+        'Layer ham, cheese, and mustard in wrap.',
+        'Add lettuce if desired.',
+        'Roll up tightly and slice.'
+      ]
+    },
+    {
+      title: 'Peanut Butter Apple Slices',
+      ingredients: [
+        '1 apple',
+        '2 tbsp peanut butter',
+        '1/2 tbsp honey',
+        'Pinch of cinnamon',
+        'Granola (optional)'
+      ],
+      steps: [
+        'Core and slice apple.',
+        'Spread peanut butter, drizzle honey, sprinkle cinnamon.',
+        'Top with granola if available.'
+      ]
+    },
+    {
+      title: 'Greek Yogurt & Berries',
+      ingredients: [
+        '1 cup Greek yogurt',
+        '1/2 cup mixed berries',
+        '1 tsp honey',
+        '1 tbsp nuts or seeds',
+        'Pinch of cinnamon'
+      ],
+      steps: [
+        'Scoop yogurt into bowl.',
+        'Top with berries, honey, and cinnamon.',
+        'Sprinkle with nuts or seeds.'
+      ]
     }
   ],
   veganPlant: [
@@ -211,6 +511,38 @@ const RECIPE_DATA = {
       proteinSource: 'Tofu'
     },
     {
+      title: 'Soy Sauce Noodle Bowl',
+      ingredients: [
+        '200g dried noodles',
+        '2 spring onions',
+        '2 tbsp soy sauce',
+        '1 tbsp sesame oil',
+        'Pinch of white pepper'
+      ],
+      steps: [
+        'Prepare noodles as per pack instructions.',
+        'Mix soy sauce, oil, pepper. Toss noodles in mixture.',
+        'Top with chopped spring onion and serve.'
+      ],
+      proteinSource: 'Soy'
+    },
+    {
+      title: 'Simple Lentil Stew',
+      ingredients: [
+        '1 cup cooked lentils',
+        '1 carrot',
+        '1 small onion',
+        '2 cups vegetable broth',
+        '1 bay leaf'
+      ],
+      steps: [
+        'Chop onion and carrot, sauté in pot.',
+        'Add lentils, broth, bay leaf, simmer 15 min.',
+        'Remove bay leaf and serve.'
+      ],
+      proteinSource: 'Lentils'
+    },
+    {
       title: 'Lentil Curry',
       ingredients: [
         '1 cup dried lentils',
@@ -227,18 +559,18 @@ const RECIPE_DATA = {
       proteinSource: 'Lentils'
     },
     {
-      title: 'Simple Lentil Stew',
+      title: 'Lentil Shepherd\'s Pie',
       ingredients: [
-        '1 cup cooked lentils',
+        '1.5 cups cooked lentils',
+        '2 cups mashed potato',
+        '1 onion',
         '1 carrot',
-        '1 small onion',
-        '2 cups vegetable broth',
-        '1 bay leaf'
+        '2 tbsp tomato paste'
       ],
       steps: [
-        'Chop onion and carrot, sauté in pot.',
-        'Add lentils, broth, bay leaf, simmer 15 min.',
-        'Remove bay leaf and serve.'
+        'Sauté onion and carrot, mix in lentils and tomato paste.',
+        'Spread in dish, top with mashed potato.',
+        'Bake at 200°C for 15 min.'
       ],
       proteinSource: 'Lentils'
     },
@@ -258,6 +590,38 @@ const RECIPE_DATA = {
       proteinSource: 'Chickpeas'
     },
     {
+      title: 'Curried Chickpea Stew',
+      ingredients: [
+        '1 can chickpeas',
+        '1 can chopped tomatoes',
+        '1 onion',
+        '1 tsp curry powder',
+        'Salt'
+      ],
+      steps: [
+        'Sauté onion, add curry powder and cook 1 min.',
+        'Add chickpeas and tomatoes, simmer 10 min.',
+        'Season and serve with bread or rice.'
+      ],
+      proteinSource: 'Chickpeas'
+    },
+    {
+      title: 'Beans on Toast (Vegan)',
+      ingredients: [
+        '1 can baked beans',
+        '2 slices wholemeal bread',
+        '1 tsp vegan spread',
+        '1/2 tsp paprika',
+        'Pinch black pepper'
+      ],
+      steps: [
+        'Toast bread, spread with vegan spread.',
+        'Heat beans, season with paprika and pepper.',
+        'Top bread with beans and serve.'
+      ],
+      proteinSource: 'Beans'
+    },
+    {
       title: 'Bean & Corn Salad',
       ingredients: [
         '1 can black beans',
@@ -271,6 +635,86 @@ const RECIPE_DATA = {
         'Add juice of lime, salt, coriander; mix and serve.'
       ],
       proteinSource: 'Beans'
+    },
+    {
+      title: 'Quick Black Bean Rice',
+      ingredients: [
+        '1 cup cooked rice',
+        '1 can black beans',
+        '1/2 tsp cumin',
+        'Salt',
+        '1 tbsp chopped onion'
+      ],
+      steps: [
+        'Mix beans, onion, cumin, salt in pan; heat 2 min.',
+        'Stir in rice, cook until warm.',
+        'Serve as bowl or side.'
+      ],
+      proteinSource: 'Beans'
+    },
+    {
+      title: 'Peanut Butter Banana Toast',
+      ingredients: [
+        '2 slices bread',
+        '1 banana',
+        '2 tbsp peanut butter',
+        'Chia seeds (optional)',
+        'Cinnamon'
+      ],
+      steps: [
+        'Toast bread, spread peanut butter.',
+        'Slice banana on top.',
+        'Sprinkle cinnamon and chia seeds.'
+      ],
+      proteinSource: 'Peanut'
+    },
+    {
+      title: 'Hummus Stuffed Pita',
+      ingredients: [
+        '1 pita bread',
+        '3 tbsp hummus',
+        '1/4 cucumber, sliced',
+        'Tomato slices',
+        'Lettuce'
+      ],
+      steps: [
+        'Warm pita, slice open.',
+        'Fill with hummus, cucumber, lettuce and tomato.',
+        'Serve cold or warm.'
+      ],
+      proteinSource: 'Chickpeas'
+    },
+    {
+      title: 'Plant-Based Pesto Pasta',
+      ingredients: [
+        '150g pasta',
+        '2 tbsp vegan pesto',
+        '1 tbsp olive oil',
+        'Salt & pepper',
+        'Chopped walnuts (optional)'
+      ],
+      steps: [
+        'Cook pasta, drain.',
+        'Stir in pesto, oil, seasonings.',
+        'Top with chopped walnuts.'
+      ],
+      proteinSource: 'Nuts'
+    },
+    {
+      title: 'Smashed Avocado & Beans',
+      ingredients: [
+        '1 avocado',
+        '1/2 cup canned black beans',
+        'Juice of 1/4 lime',
+        'Salt',
+        '2 slices bread'
+      ],
+      steps: [
+        'Toast bread.',
+        'Mash avocado with lime and salt, spread on toast.',
+        'Top with beans.'
+      ],
+      proteinSource: 'Avocado & Beans'
     }
   ]
 };
