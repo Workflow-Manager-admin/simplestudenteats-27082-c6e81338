@@ -280,9 +280,16 @@ body::after {
 /* Responsive layout */
 @media (max-width: 650px) {
   .sse-section-title { font-size: 1.43rem; }
-  .sse-main { padding: 16px 0; }
-  .sse-container { padding: 0 8px; }
-  .sse-recipe-card { padding: 12px 8px; }
+  .sse-main { 
+    padding: 10px 0;
+    background: rgba(255,255,250,0.98);
+    border-radius: 10px;
+  }
+  .sse-container { padding: 0 4px; }
+  .sse-recipe-card { 
+    padding: 8px 4px;
+    background: rgba(255,253,235,1);
+  }
   .sse-navbar-content { min-height: 48px; }
   .sse-nav-btn { padding: 8px 8px; font-size: 0.98rem;}
 }
