@@ -10,17 +10,20 @@ import './App.css';
 const SECTION_KEYS = [
   'studentMeals',
   'fiveIngredients',
-  'veganPlant'
+  'veganPlant',
+  'grandparentsCooking'
 ];
 
 const SECTION_LABELS = {
   studentMeals: 'Student Meals',
   fiveIngredients: '5-Ingredient Recipes',
-  veganPlant: 'Vegan & Plant-Based Galaxy'
+  veganPlant: 'Vegan & Plant-Based Galaxy',
+  grandparentsCooking: 'Cooking with Grandparents'
 };
 
 /**
- * Hardcoded demo recipes without images.
+ * Hardcoded demo recipes without images,
+ * including "Cooking with Grandparents" traditional recipes and stories.
  */
 const RECIPE_DATA = {
   studentMeals: [
