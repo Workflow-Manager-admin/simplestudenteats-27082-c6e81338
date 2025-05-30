@@ -10,24 +10,243 @@ import './App.css';
 const SECTION_KEYS = [
   'studentMeals',
   'fiveIngredients',
-  'veganPlant',
-  'grandparentsCooking'
+  'veganPlant'
 ];
 
 const SECTION_LABELS = {
   studentMeals: 'Student Meals',
   fiveIngredients: '5-Ingredient Recipes',
-  veganPlant: 'Vegan & Plant-Based Galaxy',
-  grandparentsCooking: 'Cooking with Grandparents'
+  veganPlant: 'Vegan & Plant-Based Galaxy'
 };
 
 /**
  * Hardcoded demo recipes without images,
- * including "Cooking with Grandparents" traditional recipes and stories.
+ * per the original requirements (three sections, 15 recipes each).
  */
 const RECIPE_DATA = {
   studentMeals: [
-    // ...unchanged studentMeals recipes...
+    {
+      title: "Classic Tuna Mayo Sandwich",
+      ingredients: [
+        "1 can tuna (drained)",
+        "2 tbsp mayonnaise",
+        "2 slices bread",
+        "Pinch of salt & pepper",
+        "Lettuce leaf (optional)"
+      ],
+      steps: [
+        "Mix tuna with mayonnaise, salt, and pepper.",
+        "Spread onto one slice of bread, add lettuce if using.",
+        "Top with the other slice, slice in half, and serve."
+      ]
+    },
+    {
+      title: "Egg Fried Rice",
+      ingredients: [
+        "1 cup cooked rice",
+        "2 eggs",
+        "2 tsp soy sauce",
+        "1 tbsp oil",
+        "Frozen peas/carrots"
+      ],
+      steps: [
+        "Heat oil in pan, add beaten eggs and scramble.",
+        "Add cooked rice and veggies, stir-fry for 2 min.",
+        "Add soy sauce, mix and serve hot."
+      ]
+    },
+    {
+      title: "One-Pan Baked Beans & Toast",
+      ingredients: [
+        "1 can baked beans",
+        "2 slices bread",
+        "Butter",
+        "Salt & pepper",
+        "Chili flakes (optional)"
+      ],
+      steps: [
+        "Heat baked beans in a pot.",
+        "Toast bread and butter it.",
+        "Serve beans over toast, sprinkle chili if desired."
+      ]
+    },
+    {
+      title: "Simple Chicken Wrap",
+      ingredients: [
+        "1 cooked chicken breast (shredded)",
+        "1 tortilla wrap",
+        "Lettuce",
+        "Mayonnaise or yogurt",
+        "Sliced tomato"
+      ],
+      steps: [
+        "Fill wrap with chicken, lettuce, tomato.",
+        "Add a spoonful of mayo/yogurt.",
+        "Roll up wrap and slice in half."
+      ]
+    },
+    {
+      title: "Vegetarian Pasta Salad",
+      ingredients: [
+        "1 cup cooked pasta",
+        "1/2 cup cherry tomatoes",
+        "1/4 cucumber",
+        "Olive oil",
+        "Feta cheese"
+      ],
+      steps: [
+        "Chop veggies and add to pasta.",
+        "Drizzle with olive oil and toss.",
+        "Sprinkle feta on top before serving."
+      ]
+    },
+    {
+      title: "Lazy Bean Chili",
+      ingredients: [
+        "1 can mixed beans",
+        "1/2 onion (chopped)",
+        "1 tsp chili powder",
+        "1 can chopped tomatoes",
+        "Oil"
+      ],
+      steps: [
+        "Heat oil, sauté onion and chili powder.",
+        "Add beans and tomatoes, simmer 10 min.",
+        "Serve with bread or rice."
+      ]
+    },
+    {
+      title: "Microwave Scrambled Eggs",
+      ingredients: [
+        "2 eggs",
+        "2 tbsp milk",
+        "Salt & pepper",
+        "Butter",
+        "Chopped herbs (optional)"
+      ],
+      steps: [
+        "Beat eggs, milk, salt, pepper in a mug.",
+        "Microwave 45 sec, stir, microwave 30 sec.",
+        "Add butter and herbs, eat hot."
+      ]
+    },
+    {
+      title: "Cheesy Veggie Quesadilla",
+      ingredients: [
+        "1 flour tortilla",
+        "1/2 cup shredded cheese",
+        "1/4 bell pepper",
+        "1 tbsp chopped onion",
+        "Spray oil"
+      ],
+      steps: [
+        "Heat pan, spray oil.",
+        "Fill tortilla with cheese & veg, fold.",
+        "Cook both sides until golden."
+      ]
+    },
+    {
+      title: "Student Curry",
+      ingredients: [
+        "1 cup cooked rice",
+        "1/2 jar curry sauce",
+        "1/2 can chickpeas",
+        "Handful frozen peas",
+        "Oil"
+      ],
+      steps: [
+        "Heat oil, fry chickpeas and peas.",
+        "Add curry sauce, simmer 5 min.",
+        "Serve with rice."
+      ]
+    },
+    {
+      title: "Tomato Omelette",
+      ingredients: [
+        "2 eggs",
+        "1 tomato (chopped)",
+        "Salt",
+        "Pepper",
+        "Oil"
+      ],
+      steps: [
+        "Beat eggs, add tomato, salt, and pepper.",
+        "Heat pan with oil, pour egg mix.",
+        "Cook until set, fold, serve."
+      ]
+    },
+    {
+      title: "Ham & Cheese Toastie",
+      ingredients: [
+        "2 slices bread",
+        "1 slice ham",
+        "1 slice cheese",
+        "Butter",
+        "Mustard (optional)"
+      ],
+      steps: [
+        "Butter bread, fill with ham and cheese.",
+        "Add mustard if liked.",
+        "Toast in pan or sandwich press."
+      ]
+    },
+    {
+      title: "Quick Tomato Pasta",
+      ingredients: [
+        "200g pasta",
+        "1 can chopped tomatoes",
+        "1 garlic clove",
+        "Oil",
+        "Dried basil"
+      ],
+      steps: [
+        "Cook pasta, drain.",
+        "Meanwhile sauté garlic in oil, add tomatoes, cook 5 min.",
+        "Add pasta and basil, toss to coat."
+      ]
+    },
+    {
+      title: "Peanut Butter Banana Toast",
+      ingredients: [
+        "2 slices bread",
+        "2 tbsp peanut butter",
+        "1 banana",
+        "Honey",
+        "Cinnamon"
+      ],
+      steps: [
+        "Toast bread, spread peanut butter.",
+        "Top with sliced banana, drizzle honey, sprinkle cinnamon."
+      ]
+    },
+    {
+      title: "Chickpea Salad Bowl",
+      ingredients: [
+        "1 can chickpeas (drained)",
+        "1/4 red onion",
+        "1 tomato",
+        "Lemon juice",
+        "Olive oil"
+      ],
+      steps: [
+        "Chop onion and tomato, combine with chickpeas.",
+        "Add lemon juice and olive oil, toss to coat."
+      ]
+    },
+    {
+      title: "Garlic Butter Noodles",
+      ingredients: [
+        "200g noodles",
+        "2 tbsp butter",
+        "2 garlic cloves",
+        "Parsley",
+        "Salt & pepper"
+      ],
+      steps: [
+        "Cook noodles, drain.",
+        "Melt butter, sauté garlic, toss noodles, add parsley."
+      ]
+    }
   ],
   fiveIngredients: [
     {
@@ -257,74 +476,234 @@ const RECIPE_DATA = {
     }
   ],
   veganPlant: [
-    // ...unchanged veganPlant recipes...
-  ],
-  grandparentsCooking: [
     {
-      title: "Grandma's Apple Cinnamon Pancakes",
+      title: "Lentil Bolognese",
+      proteinSource: "Lentils",
       ingredients: [
-        "2 apples (peeled, grated)",
-        "1 1/2 cups flour",
-        "2 eggs",
-        "1 cup milk",
-        "1 tsp cinnamon",
-        "2 tbsp sugar",
-        "1 tsp baking powder",
-        "Pinch of salt",
-        "Butter or oil for frying"
+        "1 cup dried lentils",
+        "1 can chopped tomatoes",
+        "1 onion (chopped)",
+        "2 garlic cloves",
+        "1 tsp dried oregano"
       ],
       steps: [
-        "In a bowl, mix flour, baking powder, cinnamon, sugar, and salt.",
-        "Whisk in eggs and milk until just combined.",
-        "Fold in grated apples.",
-        "Heat pan with a little butter or oil; drop small ladlefuls of batter.",
-        "Flip when bubbles form, cook until golden on both sides.",
-        "Serve warm, optionally sprinkle with more cinnamon or a little sugar."
-      ],
-      story:
-        "Legend has it my grandma learned this recipe from her own mother during the autumn apple harvests in the Polish countryside. Every Sunday, the smell of cinnamon would drift from her small kitchen, bringing neighbors in for a chat and a warm treat. These soft pancakes celebrate family, togetherness, and making the most of simple ingredients."
+        "Sauté onion and garlic, add lentils.",
+        "Add tomatoes and oregano, simmer until lentils tender.",
+        "Serve with pasta or rice."
+      ]
     },
     {
-      title: "Nana’s Hearty Vegetable Soup",
+      title: "Creamy Tofu Stir-Fry",
+      proteinSource: "Tofu",
       ingredients: [
-        "2 carrots, diced",
-        "2 potatoes, peeled and cubed",
-        "1 onion, chopped",
-        "2 celery stalks, chopped",
-        "2 cups vegetable broth",
-        "1 can diced tomatoes",
-        "1 clove garlic, minced",
-        "1 tsp dried thyme",
-        "Salt and pepper to taste"
+        "200g firm tofu",
+        "1 cup broccoli florets",
+        "2 tbsp soy sauce",
+        "1 tbsp peanut butter",
+        "1 tsp ginger"
       ],
       steps: [
-        "Heat a large pot, sauté the onion, garlic, carrot, and celery for 3-4 minutes.",
-        "Add potatoes, diced tomatoes (with juice), broth, and thyme.",
-        "Bring to a boil; reduce to simmer and cook until veggies are tender (20-25 minutes).",
-        "Season with salt and pepper to taste. Serve steaming hot."
-      ],
-      story:
-        "Nana would serve this soup after long days in her garden, as a way to bring the whole family together around one pot. It’s a celebration of simple, local produce and the comfort of home. Every bowl brings back memories of laughter at a crowded table."
+        "Cube tofu, stir-fry with broccoli.",
+        "Mix soy, peanut butter, ginger with splash water.",
+        "Add sauce to pan, heat until thickened."
+      ]
     },
     {
-      title: "Nonno’s Classic Spaghetti Aglio e Olio",
+      title: "Chickpea Salad Wraps",
+      proteinSource: "Chickpeas",
       ingredients: [
-        "200g spaghetti",
-        "3 tbsp olive oil",
-        "3 garlic cloves, thinly sliced",
-        "Pinch of red chili flakes",
-        "2 tbsp chopped parsley",
-        "Salt",
-        "Grated parmesan (optional)"
+        "1 can chickpeas",
+        "2 tbsp vegan mayo",
+        "1 tsp mustard",
+        "Lettuce leaves",
+        "Salt & pepper"
       ],
       steps: [
-        "Cook spaghetti until al dente in salted water.",
-        "While pasta cooks, gently warm olive oil in a pan. Add sliced garlic and chili flakes, sauté on low till garlic golden.",
-        "Reserve some pasta water, drain spaghetti, then toss into the pan.",
-        "Add a splash of pasta water if needed, mix with parsley. Serve hot, with parmesan if liked."
+        "Mash chickpeas; mix in mayo, mustard, salt, and pepper.",
+        "Spoon mixture into lettuce leaves and serve."
+      ]
+    },
+    {
+      title: "Easy Seitan Chilli",
+      proteinSource: "Seitan",
+      ingredients: [
+        "1 pack seitan (shredded)",
+        "1 can kidney beans",
+        "1/2 jar tomato sauce",
+        "1 tsp cumin",
+        "Chili flakes"
       ],
-      story:
-        "Inspired by Italian kitchen traditions, Nonno would cook this simple meal after returning from the olive groves. He believed great flavor came from simplicity and gathering at the table. This recipe is a delicious reminder of resilience, thrift, and family joy."
+      steps: [
+        "Brown seitan in pan, add sauce, beans, and spices.",
+        "Simmer to blend flavors, serve hot."
+      ]
+    },
+    {
+      title: "Simple Hummus Bowl",
+      proteinSource: "Chickpeas",
+      ingredients: [
+        "1 cup hummus",
+        "1 pita bread",
+        "Cherry tomatoes",
+        "Cucumber",
+        "Paprika"
+      ],
+      steps: [
+        "Spoon hummus into bowl, top with sliced veggies.",
+        "Sprinkle paprika, serve with pita."
+      ]
+    },
+    {
+      title: "Tofu Scramble",
+      proteinSource: "Tofu",
+      ingredients: [
+        "200g firm tofu",
+        "1/2 tsp turmeric",
+        "1 tbsp plant milk",
+        "Salt & pepper",
+        "Spinach"
+      ],
+      steps: [
+        "Crumble tofu, stir in turmeric and milk.",
+        "Add spinach, cook until wilted, season."
+      ]
+    },
+    {
+      title: "Hearty Lentil Soup",
+      proteinSource: "Lentils",
+      ingredients: [
+        "1 cup red lentils",
+        "1 carrot (diced)",
+        "1 onion",
+        "1 veg stock cube",
+        "2 cups water"
+      ],
+      steps: [
+        "Cook all ingredients in pot until lentils are soft.",
+        "Blend or mash for smooth texture if desired."
+      ]
+    },
+    {
+      title: "Chili Peanut Noodles",
+      proteinSource: "Peanuts",
+      ingredients: [
+        "200g rice noodles",
+        "2 tbsp peanut butter",
+        "Soy sauce",
+        "Spring onion",
+        "Chili oil"
+      ],
+      steps: [
+        "Cook noodles, toss with peanut butter, soy sauce, chili oil.",
+        "Top with sliced spring onion."
+      ]
+    },
+    {
+      title: "Stuffed Bell Peppers",
+      proteinSource: "Lentils",
+      ingredients: [
+        "2 bell peppers",
+        "1 cup cooked lentils",
+        "1/2 cup tomato sauce",
+        "Garlic",
+        "Rice"
+      ],
+      steps: [
+        "Mix cooked rice, lentils, and sauce.",
+        "Stuff into halved peppers, bake until soft."
+      ]
+    },
+    {
+      title: "Sesame Tofu Rice Bowl",
+      proteinSource: "Tofu",
+      ingredients: [
+        "200g tofu",
+        "1/2 cup rice",
+        "Sesame seeds",
+        "Soy sauce",
+        "Green beans"
+      ],
+      steps: [
+        "Cook rice, steam green beans.",
+        "Fry tofu, sprinkle sesame seeds.",
+        "Serve everything in a bowl, drizzle soy sauce."
+      ]
+    },
+    {
+      title: "Mushroom Stroganoff",
+      proteinSource: "Mushrooms",
+      ingredients: [
+        "2 cups mushrooms",
+        "1 onion",
+        "1/2 cup plant cream",
+        "Garlic",
+        "Pasta"
+      ],
+      steps: [
+        "Sauté onion and garlic, add mushrooms.",
+        "Stir in plant cream, heat.",
+        "Serve over cooked pasta."
+      ]
+    },
+    {
+      title: "Vegan Bean Burritos",
+      proteinSource: "Beans",
+      ingredients: [
+        "1 can black beans",
+        "2 tortillas",
+        "Salsa",
+        "Corn",
+        "Avocado"
+      ],
+      steps: [
+        "Mash beans, mix with salsa.",
+        "Spread onto tortillas, add corn and avocado, roll up."
+      ]
+    },
+    {
+      title: "BBQ Jackfruit Sandwich",
+      proteinSource: "Jackfruit",
+      ingredients: [
+        "1 can jackfruit",
+        "BBQ sauce",
+        "Sandwich buns",
+        "Coleslaw",
+        "Lettuce"
+      ],
+      steps: [
+        "Cook jackfruit with BBQ sauce.",
+        "Pile onto buns with lettuce and coleslaw."
+      ]
+    },
+    {
+      title: "Quick Lentil Dal",
+      proteinSource: "Lentils",
+      ingredients: [
+        "1 cup red lentils",
+        "2 cups water",
+        "1/2 tsp cumin",
+        "1/2 tsp turmeric",
+        "Salt"
+      ],
+      steps: [
+        "Boil all together until lentils are soft.",
+        "Mash and serve with rice or flatbread."
+      ]
+    },
+    {
+      title: "Miso Soup with Tofu",
+      proteinSource: "Tofu",
+      ingredients: [
+        "1 tbsp miso paste",
+        "2 cups water",
+        "75g tofu (cubed)",
+        "Spring onion",
+        "Seaweed"
+      ],
+      steps: [
+        "Dissolve miso in hot water.",
+        "Add tofu, seaweed, and spring onion, heat gently (don’t boil)."
+      ]
     }
   ]
 };
@@ -333,7 +712,7 @@ const RECIPE_DATA = {
 function App() {
   const [selectedSection, setSelectedSection] = useState('studentMeals');
 
-  // For Vegan section, group by protein source. (Can expand logic as needed)
+  // For Vegan section, group by protein source.
   const groupVeganRecipes = () => {
     const grouped = {};
     RECIPE_DATA.veganPlant.forEach(recipe => {
@@ -384,9 +763,6 @@ function App() {
           {selectedSection === 'veganPlant' &&
             <p>Explore plant-based recipes, organized by their main protein (lentils, tofu, seitan, and more).</p>
           }
-          {selectedSection === 'grandparentsCooking' &&
-            <p>Traditional, family-friendly recipes from our grandparents—with stories, nostalgia, and cultural history in every dish.</p>
-          }
         </div>
         <section aria-label="Recipe List">
           {selectedSection === 'veganPlant' ? (
@@ -420,33 +796,6 @@ function App() {
                 </div>
               ))}
             </div>
-          ) : selectedSection === 'grandparentsCooking' ? (
-            <ul className="sse-recipe-list">
-              {RECIPE_DATA.grandparentsCooking.map((recipe, i) => (
-                <li className="sse-recipe-card" key={recipe.title}>
-                  <h2 className="sse-recipe-title">{recipe.title}</h2>
-                  <div className="sse-recipe-section">
-                    <h3 className="sse-recipe-subtitle">Ingredients</h3>
-                    <ul className="sse-ingredient-list">
-                      {recipe.ingredients.map((item, j) => (
-                        <li key={j}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="sse-recipe-section">
-                    <h3 className="sse-recipe-subtitle">Steps</h3>
-                    <ol className="sse-steps-list">
-                      {recipe.steps.map((step, k) => (
-                        <li key={k}>{step}</li>
-                      ))}
-                    </ol>
-                  </div>
-                  <div className="sse-recipe-section" style={{ marginTop: '1em', fontStyle: 'italic', color: '#6c5600' }}>
-                    <div><b>Family Story:</b> {recipe.story}</div>
-                  </div>
-                </li>
-              ))}
-            </ul>
           ) : (
             <ul className="sse-recipe-list">
               {RECIPE_DATA[selectedSection].map((recipe, i) => (
